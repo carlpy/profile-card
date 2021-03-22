@@ -26,15 +26,23 @@ body {
     font-size: 18px;
 }
 
+
+/* 
+    ===================
+   |container and card |
+    ==================
+*/
+
 /* setting the main container */
 
 #profile-cont {
-    width: 90%;
-    max-width: 21.88rem;
+    width: min(90%, 21.88rem);
     position: absolute; /* center the section in the screen*/ 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    box-shadow: 0 0 1.5rem;
 }
 
 .profile-card {
@@ -43,7 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 5%;
+    border-radius: inherit;
 }
 
 /*
@@ -53,23 +61,20 @@ body {
 */
 
 
-/* handling the svg */
+/* -- handling the svg -- */
 
 .profile-svg svg {
     width: 100%;
     border-radius: 5%;
 }
 
-/* -- sizing the images -- */
-
-
 /* centering and styling the images */
 
 .profile-photo { 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -135%);
+    position: relative;
+    top: 0;
+    left: 16%;
+    transform: translate(-50%, -50%);
 }
 
 .profile-photo img {
@@ -77,55 +82,41 @@ body {
     border: solid 0.3125rem #eee;
 }
 
+/* styling the profile info*/
+
+.profile-info {
+    margin: -50px 0 0 0;
+    text-align: center;
+}
+
+.profile-info span, p:last-child {
+    color: var(--clr-dark-gray);
+    font-weight: 400;
+}
+
+/* styling profile view followers and more details */
+
+.profile-view {
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    border-top: .1px solid var(--clr-dark-gray);
+
+}
+
+.profile-view div p:last-child {
+    color: var(--clr-dark-gray);
+    font-size: .9rem;
+}
+
+.fnt-700 {
+    font-weight: 700;
+    margin-bottom: 0;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* the info about the challenge */
 
 .attribution { 
     font-size: 11px; 
