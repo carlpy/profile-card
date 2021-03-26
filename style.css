@@ -18,16 +18,13 @@
     --main-fnt: 'Kumbh Sans', sans-serif;   
 }
 
-html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: var(--clr-cyan);
     font-size: 18px;
     font-family: var(--main-fnt);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -39,14 +36,18 @@ body {
 
 /* setting the main container */
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 #profile-cont {
     width: min(90%, 21.88rem);
-    position: absolute; /* center the section in the screen*/ 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 20px 20px;
-    box-shadow: 0 0 1.5rem;
+    box-shadow: 0 0 .5rem;
 }
 
 .profile-card {
