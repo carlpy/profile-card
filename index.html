@@ -6,53 +6,62 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     
     <title>Frontend Mentor | Profile card component</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <section id="profile-cont">
-    <!-- this div is control all the card -->
-      <div class="profile-card">
+    
+    <main >
+      <!-- this div control the svg -->
+      <div class="circles">
+        <img class="svg-t" src="./images/bg-pattern-top.svg" alt="">
+        <img class="svg-b" src="./images/bg-pattern-bottom.svg" alt="">
+      </div>
       
-        <!-- svg handling -->
-        <div class="profile-svg">
-          <svg width="350" height="140" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="c"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="d"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient><path id="a" d="M0 0h350v140H0z"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill="#41CBD3" xlink:href="#a"/><g mask="url(#b)" opacity=".5"><g transform="translate(-11 -4)"><ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g><g transform="translate(-11 91.63)"><ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g><g transform="translate(-11 43.815)"><ellipse fill="url(#c)" transform="rotate(-90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(-90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g><g transform="translate(11.822 18.77)"><ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g><g transform="translate(11.822 114.4)"><ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g><g transform="translate(11.822 66.585)"><ellipse fill="url(#c)" transform="rotate(-90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(-90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g></g></g></svg>
-        </div>
-        
-        <!-- profile photo -->
-        <div class="profile-photo">
-          <img src="./images/image-victor.jpg" alt="Victor Crest">
-        </div>
-  
-
-        <!-- profile information -->
-        <div class="profile-info">
-          <p class="fnt-700">Victor Crest <span>26</span></p>
-          <p>London</p>    
-        </div>
-
-        <!-- profile details -->
-        <div class="profile-view">
-          <div>
-            <p class="fnt-700">80K</p>
-            <p>Followers</p>
+      <!-- this div is control all the card -->
+      <section id="profile-cont">
+        <div class="profile-card">
+          
+          <!-- svg handling -->
+          <div class="profile-svg">
+            <img src="./images/bg-pattern-card.svg" alt="">
           </div>
             
-          <div>
-            <p class="fnt-700">803K</p>
-            <p>Likes</p>
+          <!-- profile photo -->
+          <div class="profile-photo">
+            <img src="./images/image-victor.jpg" alt="Victor Crest">
           </div>
-  
-          <div>
-            <p class="fnt-700">1.4K</p>
-            <p>Photos</p>
+      
+    
+          <!-- profile information -->
+          <div class="profile-info">
+            <p class="fnt-700">Victor Crest <span>26</span></p>
+            <p>London</p>    
+          </div>
+    
+          <!-- profile details -->
+          <div class="profile-view">
+            <div>
+              <p class="fnt-700">80K</p>
+              <p>Followers</p>
+            </div>
+                
+            <div>
+              <p class="fnt-700">803K</p>
+              <p>Likes</p>
+            </div>
+      
+            <div>
+              <p class="fnt-700">1.4K</p>
+              <p>Photos</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    
+
+      </section>
+    </main>
     
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

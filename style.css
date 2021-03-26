@@ -18,14 +18,18 @@
     --main-fnt: 'Kumbh Sans', sans-serif;   
 }
 
-body {
-    background: var(--clr-cyan);
-    font-family: var(--main-fnt);
-    box-sizing: border-box;
+html {
     margin: 0;
-    font-size: 18px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: var(--clr-cyan);
+    font-size: 18px;
+    font-family: var(--main-fnt);
+    overflow: hidden;
+}
 
 /* 
     ===================
@@ -41,7 +45,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 5%;
+    border-radius: 20px 20px;
     box-shadow: 0 0 1.5rem;
 }
 
@@ -60,12 +64,25 @@ body {
     ================
 */
 
-
 /* -- handling the svg -- */
 
-.profile-svg svg {
+.circles img {
+    position: absolute;
+}
+
+.svg-t {
+    top: -28rem;
+    left: -18rem;
+}
+
+.svg-b {
+    bottom: -29rem;
+    right: -20rem;
+}
+
+.profile-svg img {
     width: 100%;
-    border-radius: 5%;
+    border-radius: 20px 20px 0 0;
 }
 
 /* centering and styling the images */
@@ -101,7 +118,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    border-top: .1px solid var(--clr-dark-gray);
+    border-top: 1px solid var(--clr-dark-gray);
 
 }
 
@@ -118,8 +135,9 @@ body {
 
 /* the info about the challenge */
 
-.attribution { 
-    font-size: 11px; 
+.attribution {
+    padding: 1rem 0 0 0;
+    font-size: 15px; 
     text-align: center; 
 }
 
